@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/theme.css">
   <title>Document</title>
 </head>
 <body>
@@ -13,14 +14,27 @@
         <h1 class="h1 header__title">Пример</h1>
     </header>
     <main class="content">
+      <nav class="menu"></nav>
       <section>
 
       </section>
     </main>
     <footer class="footer">
-      <a class="footer__link" href="#header">
+      <a class="footer__link" href="#header" title="Вверх">
         <img class="footer__img" src="./images/up-arrow_icon.svg" alt="Вверх">
       </a>
+      <div class="container">
+        <h6 class="h6">Тема:</h6>
+        <div class="tabs">
+          <input type="radio" id="radio-1" name="tabs" checked />
+          <label class="tab" for="radio-1">Светлая</label>
+          <input type="radio" id="radio-2" name="tabs" />
+		      <label class="tab" for="radio-2">Цветная</label>
+          <input type="radio" id="radio-3" name="tabs" />
+          <label class="tab" for="radio-3">Темная</label>
+          <span class="glider"></span>
+        </div>
+      </div>
     </footer>
   </div>
 </body>
